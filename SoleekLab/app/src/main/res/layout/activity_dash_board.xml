@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.donation.shefa.soleeklab.DashBoard">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/icon"
+        android:layout_width="1000dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_below="@+id/icon"
+        android:id="@+id/dashboard_welcome"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome , user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <com.scrounger.countrycurrencypicker.library.Buttons.CountryCurrencyButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_welcome"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:country_code="US"
+        app:show_currency="true" />
+
+    <Button
+        android:id="@+id/dashboard_btn_logout"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="20dp"
+        android:background="#FF0C0F66"
+        android:text="Log Out"
+        android:textColor="#FF8BA6E2" />
+
+
+
+</RelativeLayout>
